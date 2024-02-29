@@ -1,0 +1,77 @@
+body
+{
+    background-image: url("../images/Cupcakes13c.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+
+.abouttext
+{
+   
+    
+   
+    text-align: center;
+    
+    background-color: crimson;
+    color:aliceblue;
+   
+    border-radius: 15%;
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 10px;
+    max-width: 75%;
+}
+
+.middle
+{
+    margin-top: 5%;
+    display: flex;
+   
+    justify-content: center;
+    
+
+}
+
+.startlink
+{
+    color:crimson;
+    margin-left: 20px;
+}
+p
+{
+    font-size: large;
+    
+}
+.footer
+{
+    display: flex;
+    
+    background-color:gainsboro;
+   height: 10%;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+    
+.contactlinks
+{
+    
+    width: 10%;
+   
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 1 0 30%;
+    vertical-align: center;
+    padding-top: 40px;
+    
+   
+   
+}
