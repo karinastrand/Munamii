@@ -1,8 +1,12 @@
-body
+body,html
 {
-    background-image: url("../Images2/CupCakes13c.png");
-    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-image: url("../Images2/CupCakes13c.jpg");
+    background-repeat: repeat;
     background-size: cover;
+    
 }
 
 h2{
