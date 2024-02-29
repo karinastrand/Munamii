@@ -45,15 +45,14 @@ p
 }
 .footer
 {
+    padding: 4%;
     display: flex;
-    
-    background-color:lavender;
-   height: 10%;
+
     flex-direction: row;
+    background-color:lavender;
     justify-content: center;
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
+   
+   
 }
     
 .contactlinks
