@@ -11,19 +11,15 @@ body
 
 .abouttext
 {
-   
-    
-   
     text-align: center;
     
     background-color: crimson;
     color:aliceblue;
-   
-    border-radius: 15%;
+    width: auto;
+    border-radius: 10%;
     border-style: solid;
     border-color: aliceblue;
-    padding: 10px;
-    max-width: 75%;
+    padding: 20px;
 }
 
 .middle
@@ -50,7 +46,7 @@ p
 {
     display: flex;
     
-    background-color:gainsboro;
+    background-color:lavender;
    height: 10%;
     flex-direction: row;
     justify-content: center;

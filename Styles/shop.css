@@ -8,7 +8,12 @@ body
     
 }
 
-
+h2{
+    font-size:xx-large;
+    font-weight: bolder;
+    color:crimson;
+    margin-left: 20px;
+}
 
 
 
@@ -23,18 +28,7 @@ p
     font-size: large;
     
 }
-.footer
-{
-    display: flex;
-    
-    background-color:gainsboro;
-   height: 10%;
-    flex-direction: row;
-    justify-content: center;
-    
-    bottom: 5px;
-    width: 100%;
-}
+
 .products
 {
     display: flex;
@@ -65,6 +59,64 @@ p
 }.photo
 {
     
-    max-width: 30%;
-    max-height: auto;
+    width: auto;
+    height: 75%;
+    border-radius: 5%;
+}
+   
+.products
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+.cakes
+{
+    display:flex;
+    flex-direction: row;
+    max-width: 30% ;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color:crimson;
+    border-radius: 5%;
+    margin: 10px;
+}
+.info
+{
+   text-align: center;
+   margin: 10px;
+   
+}    
+.info >h3
+{
+    font-size: 27px;
+    margin: 0px;
+    
+}
+.info >button
+{
+    background-color: crimson;
+    color:aliceblue;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info >p{
+   
+    margin: 0px;
+}
+.footer
+{
+    display: flex;
+    
+    background-color:lavender;
+   
+    flex-direction: row;
+    justify-content: center;
+    
+    bottom: 5px;
+   
 }
