@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("../Images/Cupcakes13c.png");
+    background-image: url("../Images2/Cupcakes13c.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -91,11 +91,14 @@ p
 }
 .footer
 {
-    padding: 4%;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     background-color:lavender;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
     
 .contactlinks
