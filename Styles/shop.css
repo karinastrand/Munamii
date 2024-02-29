@@ -1,0 +1,70 @@
+body
+{
+    background-image: url("../images/Cupcakes13c.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+
+
+
+
+
+.startlink
+{
+    color:crimson;
+    margin-left: 20px;
+}
+p
+{
+    font-size: large;
+    
+}
+.footer
+{
+    display: flex;
+    
+    background-color:gainsboro;
+   height: 10%;
+    flex-direction: row;
+    justify-content: center;
+    
+    bottom: 5px;
+    width: 100%;
+}
+.products
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+    
+.contactlinks
+{
+    
+    width: 10%;
+   
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 1 0 30%;
+    vertical-align: center;
+    padding-top: 40px;
+   
+}
+.shop
+{
+    display: flex;
+    flex-direction: column;
+   
+}.photo
+{
+    
+    max-width: 30%;
+    max-height: auto;
+}
