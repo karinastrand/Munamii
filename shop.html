@@ -10,20 +10,33 @@
   
      
     <div class="menu">
+               
         <a class="startlink" href="index.html">Home</a>
-        <a class="startlink" href="shop.html">Shop</a>
+        <div class="dropdown">
+            <button onclick="shopDropdown()" class="dropbtn">
+                Shop
+            </button>
+       
+            <div id="dropdownList" class="dropdown-content">
+                <a href="shop.html#Cupcakes">Cupcakes</a>
+                <a href="shop.html#BirthdayCakes">BirthdayCakes</a>
+                <a href="shop.html#WeddingCakes">WeddingCakes</a>
+            </div>
+        </div>
         <a class="startlink" href="about.html">About</a>
         <a class="startlink" href="contact.html">Contact</a>
     </div>
     <div class="shop">
         <h2 >Cupcakes</h2>
-        <div class="products">   
+        <div id="Cupcakes">
+            <div class="products"> 
+            
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake1.png" alt="cupcake1">
                     <div class="info">
                         <h3>Cupcake 1</h3>
                         <p>$ 15.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 1","$ 15.00")'>Buy</button>
                     </div>
                 </div>
                 <div class="cakes">
@@ -31,7 +44,7 @@
                     <div class="info">
                         <h3>Cupcake 2</h3>
                         <p>$ 20.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 2","$ 20.00")'>Buy</button>
                     </div>
                 </div>
                 <div class="cakes">
@@ -39,7 +52,7 @@
                     <div class="info">
                         <h3>Cupcake 3</h3>
                         <p>$ 17.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 3","$ 17.00")'>Buy</button>
                     </div>
                 </div>
                 <div class="cakes">
@@ -47,7 +60,7 @@
                     <div class="info">
                         <h3>Cupcake 4</h3>
                         <p>$ 37.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 4","$ 37.00")'>Buy</button>
                     </div>
                 </div>
                 <div class="cakes">
@@ -55,55 +68,60 @@
                     <div class="info">
                         <h3>Cupcake 5</h3>
                         <p>$ 15.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 5","$ 15.00")'>Buy</button>
                     </div>
                 </div>
+             
                 <div class="cakes">
                 <img class="photo" src="Images2/CupCake6.png" alt="cupcake6">
                 <div class="info">
                     <h3>Cupcake 6</h3>
                     <p>$ 25.00</p>
-                    <button>Buy</button>
-                </div>
+                    <button onclick='addToCart("Cupcake 6","$ 25.00")'>Buy</button>
+                    </div>
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake7.png" alt="cupcake7">
                     <div class="info">
                         <h3>Cupcake 7</h3>
                         <p>$ 17.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 7","$ 17.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake8.png" alt="cupcake8">
                     <div class="info">
                         <h3>Cupcake 8</h3>
                         <p>$ 28.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 8","$ 28.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake9.png" alt="cupcake9">
                     <div class="info">
                         <h3>Cupcake 9</h3>
                         <p>$ 38.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 9","$ 38.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake10.png" alt="cupcake10">
                     <div class="info">
                         <h3>Cupcake 10</h3>
                         <p>$ 12.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 10","$ 12.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake11.png" alt="cupcake11">
                     <div class="info">
                         <h3>Cupcake 11</h3>
                         <p>$ 35.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 11","$ 35.00")'>Buy</button>
                     </div>
                 </div>
                 <div class="cakes">
@@ -111,211 +129,221 @@
                     <div class="info">
                         <h3>Cupcake 12</h3>
                         <p>$ 19.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 12","$ 19.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake13.png" alt="cupcake13">
                     <div class="info">
                         <h3>Cupcake 13</h3>
                         <p>$ 28.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 13","$ 28.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake14.png" alt="cupcake14">
                     <div class="info">
                         <h3>Cupcake 14</h3>
                         <p>$ 37.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 14","$ 37.00")'>Buy</button>
                     </div>
+                    
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake15.png" alt="cupcake15">
                     <div class="info">
                         <h3>Cupcake 15</h3>
                         <p>$ 25.00</p>
-                        <button>Buy</button>
-                    </div>
+                        <button onclick='addToCart("Cupcake 15","$ 25.00")'>Buy</button>
+                    </div>                   
                 </div>
                 <div class="cakes">
                     <img class="photo" src="Images2/CupCake16.png" alt="cupcake16">
                     <div class="info">
                         <h3>Cupcake 16</h3>
                         <p>$ 24.00</p>
-                        <button>Buy</button>
+                        <button onclick='addToCart("Cupcake 16","$ 24.00")'>Buy</button>
                     </div>
+                   
                 </div>
+            </div>  
         </div>
         <h2 >Birthday Cakes</h2>
-        <div class="products">   
+        <div id="BirthdayCakes">
+            <div class="products">"   
             
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake1.png" alt="birthdaycake1">
-                <div class="info">
-                    <h3>Birthday Cake 1</h3>
-                    <p>$ 55.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake1.png" alt="birthdaycake1">
+                    <div class="info">
+                        <h3>Birthday Cake 1</h3>
+                        <p>$ 55.00</p>
+                        <button onclick='addToCart("BirthdayCake 1","$ 55.00")'>Buy</button>
+                    </div>
+                   
+                </div>    
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake2.png" alt="birthdaycake2">
+                    <div class="info">
+                        <h3>Birthday Cake 2</h3>
+                        <p>$ 50.00</p>
+                        <button onclick='addToCart("BirthdayCake 2","$ 50.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>    
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake2.png" alt="birthdaycake2">
-                <div class="info">
-                    <h3>Birthday Cake 2</h3>
-                    <p>$ 50.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake3.png" alt="birthdaycake3">
+                    <div class="info">
+                        <h3>Birthday Cake 3</h3>
+                        <p>$ 75.00</p>
+                        <button onclick='addToCart("BirthdayCake 3","$ 75.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake3.png" alt="birthdaycake3">
-                <div class="info">
-                    <h3>Birthday Cake 3</h3>
-                    <p>$ 75.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake4.png" alt="birthdaycake4">
+                    <div class="info">
+                        <h3>Birthday Cake 4</h3>
+                        <p>$ 43.00</p>
+                        <button onclick='addToCart("BirthdayCake 4","$ 43.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake4.png" alt="birthdaycake4">
-                <div class="info">
-                    <h3>Birthday Cake 4</h3>
-                    <p>$ 15.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake5.png" alt="birthdaycake5">
+                    <div class="info">
+                        <h3>Birthday Cake 5</h3>
+                        <p>$ 68.00</p>
+                        <button onclick='addToCart("BirthdayCake 5","$ 68.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake5.png" alt="birthdaycake5">
-                <div class="info">
-                    <h3>Birthday Cake 5</h3>
-                    <p>$ 68.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake6.png" alt="birthdaycake6">
+                    <div class="info">
+                        <h3>Birthday Cake 6</h3>
+                        <p>$ 55.00</p>
+                        <button onclick='addToCart("BirthdayCake 6","$ 55.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake6.png" alt="birthdaycake6">
-                <div class="info">
-                    <h3>Birthday Cake 6</h3>
-                    <p>$ 55.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake7.png" alt="birthdaycake7">
+                    <div class="info">
+                        <h3>Birthday Cake 7</h3>
+                        <p>$ 58.00</p>
+                        <button onclick='addToCart("BirthdayCake 7","$ 58.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake7.png" alt="birthdaycake7">
-                <div class="info">
-                    <h3>Birthday Cake 7</h3>
-                    <p>$ 58.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake8.png" alt="birthdaycake8">
+                    <div class="info">
+                        <h3>Birthday Cake 8</h3>
+                        <p>$ 49.00</p>
+                        <button onclick='addToCart("BirthdayCake 8","$ 49.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake8.png" alt="birthdaycake8">
-                <div class="info">
-                    <h3>Birthday Cake 8</h3>
-                    <p>$ 49.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake9.png" alt="birthdaycake9">
+                    <div class="info">
+                        <h3>Birthday Cake 9</h3>
+                        <p>$ 55.00</p>
+                        <button onclick='addToCart("BirthdayCake 9","$ 55.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake9.png" alt="birthdaycake9">
-                <div class="info">
-                    <h3>Birthday Cake 9</h3>
-                    <p>$ 55.00</p>
-                    <button>Buy</button>
-                </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/BirthdayCake10.png" alt="birthdaycake10">
-                <div class="info">
-                    <h3>Birthday Cake 10</h3>
-                    <p>$ 63.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/BirthdayCake10.png" alt="birthdaycake10">
+                    <div class="info">
+                        <h3>Birthday Cake 10</h3>
+                        <p>$ 63.00</p>
+                        <button onclick='addToCart("BirthdayCake 10","$ 63.00")'>Buy</button>
+                    </div>
                 </div>
             </div>
         </div>
         <h2 >Wedding Cakes</h2>
-        <div class="products">   
+        <div id="WeddingCakes">
+            <div class="products">   
             
-            <div class="cakes" >
-                
-                <img class="photo" src="Images2/WeddingCake1.png" alt="weddingcake1">
-                <div class="info">
-                    <h3>WeddingCake 1</h3>
-                    <p>$ 100.00</p>
-                    <button>Buy</button>
+                <div class="cakes" >
+                    
+                    <img class="photo" src="Images2/WeddingCake1.png" alt="weddingcake1">
+                    <div class="info">
+                        <h3>WeddingCake 1</h3>
+                        <p>$ 100.00</p>
+                        <button onclick='addToCart("WeddingCake 1","$ 100.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake2.png" alt="weddingcake2">
-                <div class="info">
-                    <h3>WeddingCake 2</h3>
-                    <p>$ 75.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake2.png" alt="weddingcake2">
+                    <div class="info">
+                        <h3>WeddingCake 2</h3>
+                        <p>$ 75.00</p>
+                        <button onclick='addToCart("WeddingCake 2","$ 75.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake3.png" alt="weddingcake3"> 
-                <div class="info">
-                    <h3>WeddingCake 3</h3>
-                    <p>$ 92.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake3.png" alt="weddingcake3"> 
+                    <div class="info">
+                        <h3>WeddingCake 3</h3>
+                        <p>$ 92.00</p>
+                        <button onclick='addToCart("WeddingCake 3","$ 92.00")'>Buy</button>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake4.png" alt="weddingcake4">
-                <div class="info">
-                    <h3>WeddingCake 4</h3>
-                    <p>$ 85.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake4.png" alt="weddingcake4">
+                    <div class="info">
+                        <h3>WeddingCake 4</h3>
+                        <p>$ 85.00</p>
+                        <button onclick='addToCart("WeddingCake 4","$ 85.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake5.png" alt="weddingcake5">
-                <div class="info">
-                    <h3>WeddingCake 5</h3>
-                    <p>$ 92.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake5.png" alt="weddingcake5">
+                    <div class="info">
+                        <h3>WeddingCake 5</h3>
+                        <p>$ 92.00</p>
+                        <button>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake6.png" alt="weddingcake6">
-                <div class="info">
-                    <h3>WeddingCake 6</h3>
-                    <p>$ 73.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake6.png" alt="weddingcake6">
+                    <div class="info">
+                        <h3>WeddingCake 6</h3>
+                        <p>$ 73.00</p>
+                        <button onclick='addToCart("WeddingCake 6","$ 73.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake7.png" alt="weddingcake7">
-                <div class="info">
-                    <h3>WeddingCake 7</h3>
-                    <p>$ 84.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake7.png" alt="weddingcake7">
+                    <div class="info">
+                        <h3>WeddingCake 7</h3>
+                        <p>$ 84.00</p>
+                        <button onclick='addToCart("WeddingCake 7","$ 84.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake8.png" alt="weddingcake8">
-                <div class="info">
-                    <h3>WeddingCake 8</h3>
-                    <p>$ 70.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake8.png" alt="weddingcake8">
+                    <div class="info">
+                        <h3>WeddingCake 8</h3>
+                        <p>$ 70.00</p>
+                        <button onclick='addToCart("WeddingCake 8","$ 70.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes">
-                <img class="photo" src="Images2/WeddingCake9.png" alt="weddingcake9">
-                <div class="info">
-                    <h3>WeddingCake 9</h3>
-                    <p>$ 98.00</p>
-                    <button>Buy</button>
+                <div class="cakes">
+                    <img class="photo" src="Images2/WeddingCake9.png" alt="weddingcake9">
+                    <div class="info">
+                        <h3>WeddingCake 9</h3>
+                        <p>$ 98.00</p>
+                        <button onclick='addToCart("WeddingCake 9","$ 98.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cakes"> 
-                <img class="photo" src="Images2/WeddingCake10.png" alt="weddingcake10">
-                <div class="info">
-                    <h3>WeddingCake 10</h3>
-                    <p>$ 64.00</p>
-                    <button>Buy</button>
+                <div class="cakes"> 
+                    <img class="photo" src="Images2/WeddingCake10.png" alt="weddingcake10">
+                    <div class="info">
+                        <h3>WeddingCake 10</h3>
+                        <p>$ 64.00</p>
+                        <button onclick='addToCart("WeddingCake 10","$ 64.00")'>Buy</button>
+                    </div>
                 </div>
-            </div>
+             /div>
         </div>
     </div>    
      
@@ -333,11 +361,11 @@
         </div>
         <div class="contactlinks">   
             <i class="fa fa-envelope" style="margin-left: 20px;">
-                    Mail
+                <a href="mailto:munamii@gmail.com"> Mail</a>
             </i>
         </div>
         </div>
-     
+        <script src="js/index.js"></script>
 </body>
 </html>
 </html>

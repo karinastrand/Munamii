@@ -7,22 +7,32 @@
 <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-    <div class="flex-container">
-       <div class="startRight">
-        <div class="menu">
+    <div class="menu">
                
-            <a class="startlink" href="index.html">Home</a>
-            <a class="startlink" href="shop.html">Shop</a>
-            <a class="startlink" href="about.html">About</a>
-            <a class="startlink" href="contact.html">Contact</a>
+        <a class="startlink" href="index.html">Home</a>
+        <div class="dropdown">
+            <button onclick="shopDropdown()" class="dropbtn">
+                Shop
+            </button>
+       
+            <div id="dropdownList" class="dropdown-content">
+                <a href="shop.html#Cupcakes">Cupcakes</a>
+                <a href="shop.html#BirthdayCakes">BirthdayCakes</a>
+                <a href="shop.html#WeddingCakes">WeddingCakes</a>
+            </div>
         </div>
-            <img class="startCake" src="Images2/StartCake.png" alt="Startcake">
-            
-        </div>
+        <a class="startlink" href="about.html">About</a>
+        <a class="startlink" href="contact.html">Contact</a>
+    </div>
+    
+    <div class="flex-container">
         <div class="startLeft">
+            <img class="startCake" src="Images2/StartCake.png" alt="Startcake">          
+        </div>
+        <div class="startRight">
             <img class="logo" src="Images2/munamii.png" alt="munamii_logo">
             <div class="welcome">
-                <h1>We deliver to your home!</h1>
+                <h2>We deliver to your home!</h2>
                 <p>Hi!<br>
                      Welcome to Munamii Cakery!<br>
                       We offer you the most delicious cakes and cupcakes <br>
@@ -30,8 +40,10 @@
                     for all kinds of events and celebrations.<br> 
                     Browse around to discover what you would like to buy.</p>
             </div>
+            <a class="startlink" href="shop.html">
+                <button id="btnBuy">Visit our Shop</button>
+            </a>
             
-            <button class="btnBuy">Buy</button>
         </div>
 
     </div>
@@ -48,9 +60,11 @@
         </div>
         <div class="contactlinks">   
             <i class="fa fa-envelope" style="margin-left: 20px;">
-                    Mail
+                <a href="mailto:munamii@gmail.com"> Mail</a>
+                   
             </i>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

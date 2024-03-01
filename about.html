@@ -10,8 +10,19 @@
   
    
     <div class="menu">
+               
         <a class="startlink" href="index.html">Home</a>
-        <a class="startlink" href="shop.html">Shop</a>
+        <div class="dropdown">
+            <button onclick="shopDropdown()" class="dropbtn">
+                Shop
+            </button>
+       
+            <div id="dropdownList" class="dropdown-content">
+                <a href="shop.html#Cupcakes">Cupcakes</a>
+                <a href="shop.html#BirthdayCakes">BirthdayCakes</a>
+                <a href="shop.html#WeddingCakes">WeddingCakes</a>
+            </div>
+        </div>
         <a class="startlink" href="about.html">About</a>
         <a class="startlink" href="contact.html">Contact</a>
     </div>
@@ -42,10 +53,10 @@
         </div>
         <div class="contactlinks">   
             <i class="fa fa-envelope" style="margin-left: 20px;">
-                    Mail
+                    Mail <a href="mailto:munamii@gmail.com"> Mail</a>
             </i>
         </div>
     </div>
-  
+    <script src="js/index.js"></script>
 </body>
 </html>
