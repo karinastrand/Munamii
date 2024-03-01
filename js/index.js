@@ -1,3 +1,5 @@
+
+//Visar och släcker dropdown menyn i shopknappen
 function shopDropdown() {
     document.getElementById("dropdownList").classList.toggle("show");
   }
@@ -13,8 +15,8 @@ function shopDropdown() {
       }
     }
   }
+  //Visar meddelande när man klickar på köpknappen i kakinforutorna
   function addToCart(text1,text2)
   {
-    
     alert(text1+", price "+text2 +" was added to your cart");
   }

@@ -1,4 +1,6 @@
-body,html
+
+/* bakgrundsbild */
+body,htmlbody,html
 {
     height: 100%;
     margin: 0;
@@ -8,48 +10,61 @@ body,html
     background-size: cover;
     
 }
+/* justeringar för vanlig skärm */
 @media only screen and (min-width:601px)
 {
-    
-
+ /*Produkterna ska visas på rad så många som får plats*/   
 .products
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+/*bilderna begränsas till 30%*/
 .cakes
 {
     max-width: 30%;
     max-height: auto;
 }
+ /* länkarna i foten ska vara på rad*/
+.footer
+    {
+        flex-direction: row;
+    }
     
 }
+/* justeringar för mobil*/
 @media only screen and (max-width:600px)
 {
+    /*Produkterna ska visas i en kolumn*/   
     .products
-{
-    display: flex;
-    flex-direction: column; justify-content: center;
-    align-items: center;
-    
-}
- .cakes
- {
-    max-width: 80%;
-    max-height:  auto;
-    
- }
+    {
+        display: flex;
+        flex-direction: column; justify-content: center;
+        align-items: center;
+    }
+   /*bilderna får inte vara för små, kunden måste kunna se även om skärmen är liten*/
+    .cakes
+    {
+        max-width: 80%;
+        max-height:  auto;
+        
+    }
+ /* länkarna i foten visas i en kolumn */
+ .footer
+    {
+        flex-direction: column;
+    }
 
 }
-
+/*Rubrikformatering*/
 h2{
     font-size:xx-large;
     font-weight: bolder;
     color:crimson;
     margin-left: 20px;
 }
-
+/*Meny*/
 .menu
 {
     max-width: 100%;
@@ -57,7 +72,7 @@ h2{
     margin-top: 5px;
   
 }
-
+/* formatering av menylänkarna*/
 .startlink
 {
     color:crimson;   
@@ -69,7 +84,7 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
-
+/* Shopsidan är så stor så man kan välja vilken del man vill komma till i en dropdownmeny i form av en knapp*/
 .dropbtn
 {
     color:crimson;
@@ -111,31 +126,27 @@ h2{
    font-weight: bolder;
     display: block;
 }
-
 .show{display: block;}
 
 .shop
+/*huvudelementen på sidan (meny, de tre kategorierna och foten ska visas i en kolumn*/
 {
 display: flex;
 flex-direction: column;
-
 }
-
-  
+/*kakbilden ska fylla 75% av rutan med info*/
 .photo
 {
-    
     width: auto;
     height: 75%;
     border-radius: 5%;
 }
-   
-
+/*formatering av info om produkten*/ 
+/*bilden*/
 .cakes
 {
     display:flex;
     flex-direction: row;
-   
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -143,18 +154,25 @@ flex-direction: column;
     border-radius: 5%;
     margin: 10px;
 }
+/*placering av text*/
 .info
 {
    text-align: center;
    margin: 10px;
    
 }    
+/*formatering av rubrik*/
 .info >h3
 {
     font-size: 27px;
     margin: 0px;
-    
+ }
+/*texten*/
+.info >p{
+   
+    margin: 0px;
 }
+/*köpknappen (som bara visar ett meddelande)*/
 .info >button
 {
     background-color: crimson;
@@ -166,22 +184,19 @@ flex-direction: column;
     padding-right: 20px;
     border-radius: 10%;
 }
-.info >p{
-   
-    margin: 0px;
-}
+/* delarna av foten som är lika oavsett enhet */
 .footer
 {
     padding: 1%;
+    background-color: lavender;
     display: flex;
-    flex-direction: row;
-    background-color:lavender;
     justify-content: center;
     position: fixed;
-    bottom: 0;
+    bottom: 2px;
     width: 100%;
+    height: auto;
 }
-    
+/* Formatering av länkarna i foten* /
 .contactlinks
 {
     flex-direction: row;
