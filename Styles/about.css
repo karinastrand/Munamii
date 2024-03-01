@@ -113,7 +113,7 @@ body,htmlbody,html
     padding: 20px;
     width: auto;
 }
-/* delarna av foten som är lika oavsett enhet *
+/* delarna av foten som är lika oavsett enhet */
 .footer
 {
     padding: 1%;
@@ -125,7 +125,7 @@ body,htmlbody,html
     width: 100%;
     height: auto;
 }
-  /* Formatering av länkarna i foten*   
+  /* Formatering av länkarna i foten*/   
 .contactlinks
 {
     flex-direction: row;
